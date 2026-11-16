@@ -1,0 +1,538 @@
+{
+  "table2": {
+    "look_back_window": "16 steps (4 h history)",
+    "train_set": "24528 samples (70%)",
+    "val_set": "5256 samples (15%)",
+    "test_set": "5256 samples (15%)",
+    "n_regimes": "3",
+    "n_experts": "3"
+  },
+  "table4": {
+    "Persistence": {
+      "15 min": {
+        "NRMSE": 3.56,
+        "NMAE": 2.02,
+        "MAPE5": 14.09,
+        "MAPE10": 11.34,
+        "R2": 0.991
+      },
+      "30 min": {
+        "NRMSE": 6.78,
+        "NMAE": 3.99,
+        "MAPE5": 27.26,
+        "MAPE10": 22.05,
+        "R2": 0.966
+      },
+      "1 h": {
+        "NRMSE": 13.04,
+        "NMAE": 7.91,
+        "MAPE5": 50.53,
+        "MAPE10": 41.17,
+        "R2": 0.873
+      },
+      "2 h": {
+        "NRMSE": 24.8,
+        "NMAE": 15.67,
+        "MAPE5": 87.31,
+        "MAPE10": 70.08,
+        "R2": 0.541
+      },
+      "4 h": {
+        "NRMSE": 43.83,
+        "NMAE": 30.32,
+        "MAPE5": 128.71,
+        "MAPE10": 101.84,
+        "R2": -0.435
+      }
+    },
+    "Smart Persistence (anchor)": {
+      "15 min": {
+        "NRMSE": 3.54,
+        "NMAE": 1.99,
+        "MAPE5": 14.12,
+        "MAPE10": 11.34,
+        "R2": 0.991
+      },
+      "30 min": {
+        "NRMSE": 5.39,
+        "NMAE": 2.97,
+        "MAPE5": 19.75,
+        "MAPE10": 16.74,
+        "R2": 0.978
+      },
+      "1 h": {
+        "NRMSE": 6.94,
+        "NMAE": 3.5,
+        "MAPE5": 20.73,
+        "MAPE10": 17.7,
+        "R2": 0.964
+      },
+      "2 h": {
+        "NRMSE": 7.94,
+        "NMAE": 3.43,
+        "MAPE5": 18.65,
+        "MAPE10": 14.86,
+        "R2": 0.953
+      },
+      "4 h": {
+        "NRMSE": 11.03,
+        "NMAE": 5.55,
+        "MAPE5": 26.66,
+        "MAPE10": 23.51,
+        "R2": 0.909
+      }
+    },
+    "SVR": {
+      "15 min": {
+        "NRMSE": 15.94,
+        "NMAE": 10.09,
+        "MAPE5": 26.08,
+        "MAPE10": 24.76,
+        "R2": 0.81
+      },
+      "30 min": {
+        "NRMSE": 19.01,
+        "NMAE": 13.36,
+        "MAPE5": 35.07,
+        "MAPE10": 32.99,
+        "R2": 0.73
+      },
+      "1 h": {
+        "NRMSE": 14.63,
+        "NMAE": 11.29,
+        "MAPE5": 27.64,
+        "MAPE10": 22.57,
+        "R2": 0.84
+      },
+      "2 h": {
+        "NRMSE": 17.71,
+        "NMAE": 13.75,
+        "MAPE5": 33.19,
+        "MAPE10": 28.68,
+        "R2": 0.766
+      },
+      "4 h": {
+        "NRMSE": 20.28,
+        "NMAE": 15.31,
+        "MAPE5": 43.79,
+        "MAPE10": 32.78,
+        "R2": 0.693
+      }
+    },
+    "RF": {
+      "15 min": {
+        "NRMSE": 2.96,
+        "NMAE": 1.5,
+        "MAPE5": 7.25,
+        "MAPE10": 6.75,
+        "R2": 0.993
+      },
+      "30 min": {
+        "NRMSE": 6.35,
+        "NMAE": 3.29,
+        "MAPE5": 13.14,
+        "MAPE10": 12.39,
+        "R2": 0.97
+      },
+      "1 h": {
+        "NRMSE": 8.33,
+        "NMAE": 4.69,
+        "MAPE5": 18.83,
+        "MAPE10": 16.35,
+        "R2": 0.948
+      },
+      "2 h": {
+        "NRMSE": 12.26,
+        "NMAE": 7.11,
+        "MAPE5": 26.64,
+        "MAPE10": 25.55,
+        "R2": 0.888
+      },
+      "4 h": {
+        "NRMSE": 13.01,
+        "NMAE": 7.86,
+        "MAPE5": 32.89,
+        "MAPE10": 32.07,
+        "R2": 0.874
+      }
+    },
+    "LSTM": {
+      "15 min": {
+        "NRMSE": 10.51,
+        "NMAE": 6.29,
+        "MAPE5": 25.61,
+        "MAPE10": 24.87,
+        "R2": 0.917
+      },
+      "30 min": {
+        "NRMSE": 14.59,
+        "NMAE": 9.13,
+        "MAPE5": 35.78,
+        "MAPE10": 34.12,
+        "R2": 0.841
+      },
+      "1 h": {
+        "NRMSE": 14.23,
+        "NMAE": 8.92,
+        "MAPE5": 29.05,
+        "MAPE10": 27.68,
+        "R2": 0.849
+      },
+      "2 h": {
+        "NRMSE": 23.04,
+        "NMAE": 14.18,
+        "MAPE5": 47.76,
+        "MAPE10": 48.97,
+        "R2": 0.603
+      },
+      "4 h": {
+        "NRMSE": 34.82,
+        "NMAE": 24.47,
+        "MAPE5": 83.5,
+        "MAPE10": 81.11,
+        "R2": 0.094
+      }
+    },
+    "GRU": {
+      "15 min": {
+        "NRMSE": 6.57,
+        "NMAE": 5.13,
+        "MAPE5": 16.92,
+        "MAPE10": 15.01,
+        "R2": 0.968
+      },
+      "30 min": {
+        "NRMSE": 12.31,
+        "NMAE": 8.69,
+        "MAPE5": 30.15,
+        "MAPE10": 28.32,
+        "R2": 0.887
+      },
+      "1 h": {
+        "NRMSE": 17.84,
+        "NMAE": 12.12,
+        "MAPE5": 42.63,
+        "MAPE10": 41.43,
+        "R2": 0.762
+      },
+      "2 h": {
+        "NRMSE": 22.87,
+        "NMAE": 16.36,
+        "MAPE5": 47.8,
+        "MAPE10": 47.79,
+        "R2": 0.609
+      },
+      "4 h": {
+        "NRMSE": 35.58,
+        "NMAE": 24.55,
+        "MAPE5": 84.42,
+        "MAPE10": 81.52,
+        "R2": 0.054
+      }
+    },
+    "Transformer": {
+      "15 min": {
+        "NRMSE": 3.69,
+        "NMAE": 2.71,
+        "MAPE5": 8.82,
+        "MAPE10": 6.51,
+        "R2": 0.99
+      },
+      "30 min": {
+        "NRMSE": 13.57,
+        "NMAE": 10.42,
+        "MAPE5": 34.14,
+        "MAPE10": 32.74,
+        "R2": 0.862
+      },
+      "1 h": {
+        "NRMSE": 14.71,
+        "NMAE": 9.58,
+        "MAPE5": 33.43,
+        "MAPE10": 32.49,
+        "R2": 0.838
+      },
+      "2 h": {
+        "NRMSE": 29.97,
+        "NMAE": 20.22,
+        "MAPE5": 71.24,
+        "MAPE10": 69.89,
+        "R2": 0.329
+      },
+      "4 h": {
+        "NRMSE": 35.13,
+        "NMAE": 21.85,
+        "MAPE5": 76.39,
+        "MAPE10": 76.92,
+        "R2": 0.078
+      }
+    },
+    "Static Transformer Ensemble": {
+      "15 min": {
+        "NRMSE": 10.52,
+        "NMAE": 7.76,
+        "MAPE5": 27.16,
+        "MAPE10": 25.57,
+        "R2": 0.917
+      },
+      "30 min": {
+        "NRMSE": 14.16,
+        "NMAE": 10.16,
+        "MAPE5": 35.41,
+        "MAPE10": 33.9,
+        "R2": 0.85
+      },
+      "1 h": {
+        "NRMSE": 19.57,
+        "NMAE": 12.91,
+        "MAPE5": 45.21,
+        "MAPE10": 45.16,
+        "R2": 0.714
+      },
+      "2 h": {
+        "NRMSE": 24.03,
+        "NMAE": 15.27,
+        "MAPE5": 52.56,
+        "MAPE10": 53.24,
+        "R2": 0.569
+      },
+      "4 h": {
+        "NRMSE": 29.89,
+        "NMAE": 19.35,
+        "MAPE5": 65.54,
+        "MAPE10": 65.71,
+        "R2": 0.333
+      }
+    },
+    "WR-MoE-Transformer": {
+      "15 min": {
+        "NRMSE": 1.87,
+        "NMAE": 0.76,
+        "MAPE5": 4.45,
+        "MAPE10": 3.41,
+        "R2": 0.997
+      },
+      "30 min": {
+        "NRMSE": 2.78,
+        "NMAE": 1.09,
+        "MAPE5": 6.29,
+        "MAPE10": 5.03,
+        "R2": 0.994
+      },
+      "1 h": {
+        "NRMSE": 5.81,
+        "NMAE": 2.43,
+        "MAPE5": 10.7,
+        "MAPE10": 9.32,
+        "R2": 0.975
+      },
+      "2 h": {
+        "NRMSE": 7.61,
+        "NMAE": 3.1,
+        "MAPE5": 12.96,
+        "MAPE10": 11.39,
+        "R2": 0.957
+      },
+      "4 h": {
+        "NRMSE": 7.67,
+        "NMAE": 2.68,
+        "MAPE5": 11.28,
+        "MAPE10": 9.78,
+        "R2": 0.956
+      }
+    }
+  },
+  "table3_proposed": {
+    "NRMSE": 5.15,
+    "NMAE": 2.01,
+    "MAPE": 9.14,
+    "WMAPE": 7.21,
+    "R2": 0.9759,
+    "MAPE_note": "MAPE computed at 5%-of-capacity mask (see Table IV footnote)"
+  },
+  "table5": [
+    {
+      "regime_label": "Regime 1 (Night / Near-Zero Output)",
+      "samples": 2248,
+      "methods": {
+        "LSTM": {
+          "NRMSE": 0.54,
+          "NMAE": 0.38,
+          "R2": -31.875
+        },
+        "Transformer": {
+          "NRMSE": 2.7,
+          "NMAE": 2.23,
+          "R2": -805.955
+        },
+        "WR-MoE-Transformer": {
+          "NRMSE": 0.16,
+          "NMAE": 0.02,
+          "R2": -1.672
+        }
+      }
+    },
+    {
+      "regime_label": "Regime 2 (Cloudy / Variable)",
+      "samples": 1031,
+      "methods": {
+        "LSTM": {
+          "NRMSE": 9.92,
+          "NMAE": 7.48,
+          "R2": 0.947
+        },
+        "Transformer": {
+          "NRMSE": 3.77,
+          "NMAE": 2.74,
+          "R2": 0.992
+        },
+        "WR-MoE-Transformer": {
+          "NRMSE": 1.46,
+          "NMAE": 1.02,
+          "R2": 0.999
+        }
+      }
+    },
+    {
+      "regime_label": "Regime 3 (Clear-Sky / High-Output)",
+      "samples": 1977,
+      "methods": {
+        "LSTM": {
+          "NRMSE": 15.56,
+          "NMAE": 12.39,
+          "R2": 0.767
+        },
+        "Transformer": {
+          "NRMSE": 4.54,
+          "NMAE": 3.24,
+          "R2": 0.98
+        },
+        "WR-MoE-Transformer": {
+          "NRMSE": 2.86,
+          "NMAE": 1.46,
+          "R2": 0.992
+        }
+      }
+    }
+  ],
+  "table5_night_key": "1",
+  "table6": [
+    {
+      "horizon": "15 min",
+      "Transformer": 0.03,
+      "Static": 0.12,
+      "WRMoE": 0.02,
+      "Improvement": 40.35
+    },
+    {
+      "horizon": "30 min",
+      "Transformer": 0.15,
+      "Static": 0.16,
+      "WRMoE": 0.03,
+      "Improvement": 79.26
+    },
+    {
+      "horizon": "1 h",
+      "Transformer": 0.17,
+      "Static": 0.22,
+      "WRMoE": 0.06,
+      "Improvement": 65.49
+    },
+    {
+      "horizon": "2 h",
+      "Transformer": 0.35,
+      "Static": 0.27,
+      "WRMoE": 0.07,
+      "Improvement": 79.14
+    },
+    {
+      "horizon": "4 h",
+      "Transformer": 0.4,
+      "Static": 0.33,
+      "WRMoE": 0.07,
+      "Improvement": 83.78
+    }
+  ],
+  "table7": [
+    {
+      "name": "Global Transformer",
+      "params": "69,889",
+      "NRMSE": 7.47,
+      "NMAE": 4.35,
+      "R2": 0.958
+    },
+    {
+      "name": "Static Multi-Expert Transformer",
+      "params": "215,235",
+      "NRMSE": 2.41,
+      "NMAE": 1.25,
+      "R2": 0.996
+    },
+    {
+      "name": "Regime-Specialized Experts (Static)",
+      "params": "215,235",
+      "NRMSE": 2.19,
+      "NMAE": 1.02,
+      "R2": 0.996
+    },
+    {
+      "name": "Full WR-MoE-Transformer",
+      "params": "223,590",
+      "NRMSE": 1.87,
+      "NMAE": 0.76,
+      "R2": 0.997
+    }
+  ],
+  "table8": [
+    {
+      "regime_label": "Regime 1 (Night / Near-Zero Output)",
+      "Expert 1": 3.31,
+      "Expert 2": 96.68,
+      "Expert 3": 0.01
+    },
+    {
+      "regime_label": "Regime 2 (Cloudy / Variable)",
+      "Expert 1": 41.08,
+      "Expert 2": 3.49,
+      "Expert 3": 55.43
+    },
+    {
+      "regime_label": "Regime 3 (Clear-Sky / High-Output)",
+      "Expert 1": 7.86,
+      "Expert 2": 0.01,
+      "Expert 3": 92.13
+    }
+  ],
+  "table9_anchor_schedule": [
+    {
+      "horizon": "15 min",
+      "alpha_persist_weight": 1.0,
+      "mape_loss_weight": 0.5
+    },
+    {
+      "horizon": "30 min",
+      "alpha_persist_weight": 0.794,
+      "mape_loss_weight": 0.75
+    },
+    {
+      "horizon": "1 h",
+      "alpha_persist_weight": 0.5,
+      "mape_loss_weight": 1.0
+    },
+    {
+      "horizon": "2 h",
+      "alpha_persist_weight": 0.198,
+      "mape_loss_weight": 1.25
+    },
+    {
+      "horizon": "4 h",
+      "alpha_persist_weight": 0.031,
+      "mape_loss_weight": 1.5
+    }
+  ],
+  "meta_extra": {
+    "total_runtime_min": 0.0,
+    "clearsky_eta": 0.0011933583119983942,
+    "mape_metric_note": "MAPE column = 5%-of-capacity mask"
+  }
+}
